@@ -1,0 +1,23 @@
+a=input()
+b=len(a)
+c=0
+for i in range (b):
+    if(a[i]=='1'):
+        c+=1
+    elif(a[i]=='2'):
+        c+=2
+    elif(a[i]=='3'):
+        c+=3
+    elif(a[i]=='4'):
+        c+=4
+    elif(a[i]=='5'):
+        c+=5
+    elif(a[i]=='6'):
+        c+=6
+    elif(a[i]=='7'):
+        c+=7
+    elif(a[i]=='8'):
+        c+=8
+    elif(a[i]=='9'):
+        c+=9
+print(c)
