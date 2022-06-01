@@ -1,0 +1,13 @@
+a=int(input())
+su=0
+b=a
+while(b!=0):
+    su+=b%10
+    b//=10
+while(su//10!=0):
+    b=su
+    su=0
+    while(b!=0):
+        su+=b%10
+        b//=10
+print(su)
