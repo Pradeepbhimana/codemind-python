@@ -1,3 +1,4 @@
-x=input()
-for i in x[::-1]:
-    print(i,end="")
+a=input()
+b=a.split(" ")
+for i in b[::-1]:
+    print(i,end=" ")
