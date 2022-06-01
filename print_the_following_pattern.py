@@ -1,7 +1,5 @@
 a=int(input())
-for i in range(a):
-    c=chr(65+i)
-    for j in range (a):
-        
-        print(c,end=" ")
+for i in range(1,a+1):
+    for j in range(1,i+1):
+        print(j,end="")
     print()
