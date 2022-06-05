@@ -1,6 +1,10 @@
 a=int(input())
-for i in range(a,0,-1):
-    b=chr(64+i)
-    for j in range(1,i+1):
-        print(b,end=" ")
+c=1
+for i in range(1,a+1):
+    for j in range(1,a+1):
+        if(j==1 or j==a or j==c):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
     print()
+    c+=1
