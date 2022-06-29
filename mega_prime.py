@@ -1,17 +1,29 @@
-c=int(input())
-for i in range (2,c//2+1):
-    if(c%i==0):
-        print("Not Mega Prime")
-        break
-    
-else:
-    d=c
-    while(d!=0):
-        e=d%10
-        if(e==2 or e==3 or e==5 or e==7 ):
-            d=d//10;
-        else:
-            print("Not Mega Prime")
-            break
+def pr(a):
+    if(a<=1):
+        return 0
     else:
+        for i in range(2,a):
+            if(a%i==0):
+                return 0
+        else:
+            return 1
+def mg(a):
+    while(a!=0):
+        if(pr(a%10)!=1):
+            return 0
+            break
+        a//=10
+    else:
+        return 1
+        
+    
+a=int(input())
+if(pr(a)):
+    if(mg(a)):
         print("Mega Prime")
+    else:
+        print("Not Mega Prime")
+else:
+    print("Not Mega Prime")
+
+   
