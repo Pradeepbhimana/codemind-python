@@ -1,16 +1,11 @@
-def pal(a):
-    b=a
+def rev(a):
     c=0
-    while(b!=0):
-        c=c*10+b%10 
-        b//=10
-    if(c==a):
-        return 1
-    else:
-        return 0
-    
+    while(a!=0):
+        c=c*10+a%10
+        a//=10
+    return c
 a=int(input())
-if(pal(a)):
+if(a==rev(a)):
     print(True)
 else:
     print(False)
