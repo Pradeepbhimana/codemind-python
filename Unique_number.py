@@ -1,29 +1,20 @@
 a=int(input())
-b=a
-c=0
-while(b!=0):
-    c+=1
-    b//=10
-d=[]
-b1=a
-for i in range(c):
-    d.append(b1%10)
-    b1//=10
-q=0
-for i in range (c):
-    for j in range (c):
-        if(i!=j):
-            if(d[i]==d[j]):
-                q+=1
-                break
-    if(q>0):
-        print("Not Unique Number")         
+b=[]
+#print(a)
+while(a!=0):
+    b.append(a%10)
+    a//=10
+
+
+for i in b:
+    c=0
+    for j in b:
+        if(i==j):
+            c+=1
+    if(c>=2):
+        print("Not Unique Number")
+        c=-1
         break
-        
-
-                
-            
-
-else:
+if(c!=-1):
     print("Unique Number")
     
