@@ -1,25 +1,20 @@
-def pal(a):
-    b=a
+def rev(a):
     c=0
-    while(b!=0):
-        c=c*10+b%10 
-        b//=10
-    if(c==a):
-        return 1
-    else:
-        return 0
-    
+    while(a!=0):
+        c=c*10+a%10
+        a//=10
+    return c
 a=int(input())
-b=a+1
-while(pal(b)!=1):
-    b+=1
-c=a-1
-while(pal(c)!=1):
-    c-=1
-if(abs(a-b)>abs(a-c)):
-    print(c)
-elif(abs(a-b)==abs(a-c)):
-    print(c,b)
+c=a+1
+while(rev(c)!=c):
+    c+=1
+d=a-1
+while(rev(d)!=d):
+    d-=1
+if(c-a > a-d):
+    print(d)
+elif(c-a == a-d):
+    print(d,c)
 else:
-    print(b)
+    print(c)
     
