@@ -1,12 +1,19 @@
-def sd(a):
-    b=a
-    su=0
-    while(b!=0):
-        su+=b%10
-        b//=10
-    return su
+
+def pr(a):
+    c=1
+    while(a!=0):
+        c*=a%10
+        a//=10
+    return c
+def s(a):
+    b=0
+    while(a!=0):
+        b+=a%10
+        a//=10
+    return b
 a=int(input())
-if(a==sd(pow(a,2))):
+if(a==s(a*a)):
     print("Neon Number")
+    #print(pr(a),s(a))
 else:
     print("Not Neon Number")
