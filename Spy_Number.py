@@ -1,19 +1,19 @@
+
+def pr(a):
+    c=1
+    while(a!=0):
+        c*=a%10
+        a//=10
+    return c
 def s(a):
-    b=a
-    su=0
-    while(b!=0):
-        su+=b%10
-        b//=10
-    return su
-def p(a):
-    b=a
-    su=1
-    while(b!=0):
-        su*=b%10
-        b//=10
-    return su
+    b=0
+    while(a!=0):
+        b+=a%10
+        a//=10
+    return b
 a=int(input())
-if(s(a)==p(a)):
+if(pr(a)==s(a)):
     print("Spy Number")
+    #print(pr(a),s(a))
 else:
     print("Not Spy Number")
