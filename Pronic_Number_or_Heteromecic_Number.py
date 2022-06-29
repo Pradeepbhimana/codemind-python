@@ -1,7 +1,13 @@
 a=int(input())
+c=0
 for i in range(a):
-    if(i*(i+1)==a):
-        print("YES")
+    if(a==i*i+1):
+        
+        c=1
         break
-else:
+if(c==1):
     print("NO")
+else:
+    print("YES")
+    
+        
