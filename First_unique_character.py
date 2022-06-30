@@ -1,4 +1,8 @@
 a=input()
+a=a.lower()
+b=""
+
+d=1
 for i in a:
     c=0
     for j in a:
@@ -6,6 +10,12 @@ for i in a:
             c+=1
     if(c==1):
         print(i)
+        d=0
         break
-else:
-    print("-1")
+if(d==1):
+    print(-1)
+#b=sorted(b)
+
+
+    
+    
