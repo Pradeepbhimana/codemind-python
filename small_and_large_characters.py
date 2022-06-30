@@ -1,4 +1,3 @@
-
 a=input()
 b=a.split()
 c=0
