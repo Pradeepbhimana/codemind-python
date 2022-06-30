@@ -1,14 +1,20 @@
 a=input()
+a=a.lower()
 b=input()
-f=0
+b=b.lower()
+c=0
 for i in a:
-    for j in b:
-        if(i==j):
-            f+=1
-            break
-    if(f==0):
+    if(i not in b):
         print(False)
+        c=1
         break
-else:
+if(c==0):
+    for i in b:
+        if i not in a:
+            print(False)
+            c=1
+            break
+if(c==0):
     print(True)
+    
     
