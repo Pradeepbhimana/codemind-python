@@ -1,4 +1,5 @@
 a=input()
-w=a.split(" ")
-w.sort()
-print(*w)
+b=a.split(" ")
+b.sort()
+for i in b:
+    print(i,end=" ")
