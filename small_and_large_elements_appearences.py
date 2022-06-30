@@ -1,4 +1,3 @@
-
 a=input()
 b='z'
 for i in a:
