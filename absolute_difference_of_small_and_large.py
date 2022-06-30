@@ -1,4 +1,3 @@
-
 a=input()
 Q=a.split(" ")
 for i in Q:
