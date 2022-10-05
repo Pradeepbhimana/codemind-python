@@ -1,22 +1,24 @@
-def feb(a):
-    c,b=0,a
-    while(b!=0):
-        c+=1
-        b//=10
-    d=a
-    e=1
-    su=0
-    while(c>=1):
-        su=su+pow(d%10,c)
-        d//=10
-        c-=1
-    if(su==a):
-        return 1
-    else:
-        return 0        
-        
+
+import math
+def rev(a):
+    s=0
+    while(a):
+        s=s*10+a%10
+        a//=10
+    return s
 a=int(input())
-if(feb(a)):
+b=a
+c=1
+s=0
+a=rev(a)
+while(a):
+    s=s+pow((a%10),c)
+    c+=1
+    a//=10
+if(s==b):
     print(True)
 else:
     print(False)
+    
+    
+#print(pow(12,2))
