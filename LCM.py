@@ -4,8 +4,6 @@ def lcm(a,b):
             if a*i==b*j:
                 return(a*i)
                 break
-            
-
 a,b=map(int,input().split())
-c=lcm(a,b)
-print(c)
+print(lcm(a,b))
+
