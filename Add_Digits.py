@@ -1,13 +1,13 @@
+def s(a):
+    s=0
+    while(a):
+        s+=a%10
+        a//=10
+    return s
 a=int(input())
-su=0
-b=a
-while(b!=0):
-    su+=b%10
-    b//=10
-while(su//10!=0):
-    b=su
-    su=0
-    while(b!=0):
-        su+=b%10
-        b//=10
-print(su)
+b=s(a)
+while(b//10!=0):
+    b=s(b)
+print(b)
+        
+        
