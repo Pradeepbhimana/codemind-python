@@ -1,16 +1,14 @@
+def su(a):
+    s=0
+    while(a):
+        s=s+(a%10)*(a%10)
+        a//=10
+    return s
 a=int(input())
-su=0
-b=a
-while(b!=0):
-    su+=pow(b%10,2)
-    b//=10
-while(su//10!=0):
-    b=su
-    su=0
-    while(b!=0):
-        su+=pow(b%10,2)
-        b//=10
-if(su==1 or su==7):
-    print("True")
+s=su(a)
+while(s//10!=0):
+    s=su(s)
+if(s==1 or s==7):
+    print(True)
 else:
-    print("False")
+    print(False)
