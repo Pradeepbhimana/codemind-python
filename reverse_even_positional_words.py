@@ -1,13 +1,13 @@
 a=input()
-w = a.split(" ")
-d=0
-for i in w:
-    if(d%2==0):
-        for j in i[::-1]:
+b=a.split()
+for i in range(len(b)):
+    if(i%2==0):
+        for j in b[i][::-1]:
             print(j,end="")
-            
         print(end=" ")
     else:
-        print(i,end=" ")
-    d+=1
-
+        for j in b[i]:
+            print(j,end="")
+        print(end=" ")
+    
+    
