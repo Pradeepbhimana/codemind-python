@@ -1,4 +1,4 @@
 a=input()
-w = a.split(" ")
-for i in w[::-1]:
-    print(i,end =" ")
+b=a.split()
+for i in b[::-1]:
+    print(i,end=" ")
