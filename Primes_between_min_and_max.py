@@ -1,31 +1,31 @@
 def pr(a):
-    if(a<=2):
+    if(a<2):
         return 0
     else:
-        for i in range(2,a//2):
+        for i in range(2,int(a**0.5)+1):
             if(a%i==0):
                 return 0
-                break
-        else:
-            return 1
-        
+        return 1
 a=int(input())
-b=list(map(int,input().split()))
-c=max(b)
-d=min(b)
+l=list(map(int,input().split()))
+mi=min(l)
+ma=max(l)
+f=0
+k=0
 for i in range(a):
-    if(b[i]==c):
-        c1=i
-    if(b[i]==d):
-        d1=i
-q=0
-if(c1>d1):
-    for i in range(d1,c1+1):
-        if(pr(b[i])):
-            q+=1
-else:
-    for i in range(c1,d1+1):
-        if(pr(b[i])):
-            q+=1
-print(q)
-
+    if(l[i]==mi and f==0):
+        mi=i
+        f=1
+    if(l[i]==ma and k==0):
+        ma=i
+        k=1
+k=0
+if(mi>ma):
+    mi,ma=ma,mi
+for i in range(a):
+    if(i>=mi and i<=ma ):
+        if(pr(l[i])):
+            k+=1
+print(k)
+        
+        
