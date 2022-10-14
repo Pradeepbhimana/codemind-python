@@ -1,6 +1,3 @@
-#include<stdio.h>
-#int main(){
 a=int(input())
-    
-    
-print(a//10);
+c=a//10
+print(c)
