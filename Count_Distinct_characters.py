@@ -1,15 +1,8 @@
 a=input()
 a=a.lower()
 b=""
-
-d=1
 for i in a:
-    if(i not in b and i!=' '):
+    if(i not in b and i!=" "):
         b+=i
+b=sorted(b)
 print(len(b))
-    
-
-
-
-    
-    
